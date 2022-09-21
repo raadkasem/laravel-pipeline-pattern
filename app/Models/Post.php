@@ -17,6 +17,7 @@ class Post extends Model
             ->through([
                 \App\QueryFilters\Active::class,
                 \App\QueryFilters\Sort::class,
+                \App\QueryFilters\MaxCount::class,
             ])
             ->thenReturn()
             ->get();
