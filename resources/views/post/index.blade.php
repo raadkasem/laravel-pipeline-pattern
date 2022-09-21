@@ -7,4 +7,4 @@
     @endforeach
 
 </table>
-{{--<div> {{ $posts->links() }}</div>--}}
+<div> {{ $posts->appends(request()->input())->links() }}</div>

@@ -20,6 +20,6 @@ class Post extends Model
                 \App\QueryFilters\MaxCount::class,
             ])
             ->thenReturn()
-            ->get();
+            ->paginate(10);
     }
 }
